@@ -1,6 +1,7 @@
 import { goodsArray } from "../../goodsArray";
 import { Cart } from "../Cart/Cart";
 import { Product } from "../Product/Product";
+import "./scss/goods.scss";
 
 export const Goods = () => (
   <section className="goods">
@@ -9,7 +10,7 @@ export const Goods = () => (
         <h2 className="goods__title">Цветы</h2>
 
         <ul className="goods__list">
-          {goodsArray.map((item) => (
+          {goodsArray.map(item => (
             <li className="goods__item" key={item.id}>
               <Product className='goods__card' {...item} />
             </li>

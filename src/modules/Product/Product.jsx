@@ -1,3 +1,5 @@
+import "./scss/product.scss";
+
 export const Product = ({ _class = "", img, title, dateDelivery, price }) => (
   <article className={`${_class} card`}>
     <img 
